@@ -1,0 +1,69 @@
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+  background: {
+      image: url($imgpath);
+      position: $position;
+      repeat: $repeat;
+  }
+}
+.testing {
+  @include background('assets-app/pexels-josh-sorenson-1714208(2).png');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+.titulo{
+  font-size: 72px;
+  margin: 15px;
+  padding: 15px;
+  line-height: 50px;
+}
+
+// .trabCon{
+//   display: inline-block;
+// }
+
+.cursos{
+  margin: 1%;
+}
+.fundo{
+  background-color: black;
+}
+
+p {
+  font-size: 40px;
+  line-height: 35px;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #125699;
+}
+
+footer {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive Styles */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
